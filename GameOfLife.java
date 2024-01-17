@@ -11,10 +11,10 @@ public class GameOfLife {
         String fileName = args[0];
         // Uncomment the test that you want to execute, and re-compile.
         // (Run one test at a time).
-        // test1(fileName);
+        test1(fileName);
         // test2(fileName);
         // test3(fileName, 3);
-        play(fileName);
+        // play(fileName);
     }
 
     // Reads the data file and prints the initial board.
@@ -155,7 +155,7 @@ public class GameOfLife {
         // Write your code here.
         for (int i = 1; i < arr.length - 1; i++) {
             for (int j = 1; j < arr[i].length - 1; j++) {
-                System.out.printf("%-3d", arr[i][j]);
+                System.out.printf("  %d", arr[i][j]);
             }
             System.out.println();
         }
